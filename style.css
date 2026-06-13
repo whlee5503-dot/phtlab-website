@@ -1,0 +1,268 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a2e3b;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* NAV */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #0f2d3d;
+  z-index: 100;
+  padding: 16px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: #2dd4bf;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2dd4bf;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f2d3d 0%, #0d4a5c 50%, #0e6677 100%);
+  color: #ffffff;
+  padding: 120px 0 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #94e4da;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #0d9488;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-btn:hover {
+  background: #0f766e;
+  transform: translateY(-2px);
+}
+
+/* APPS */
+.apps {
+  padding: 80px 0;
+  background: #f0fafa;
+}
+
+.apps h2,
+.about h2,
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0f2d3d;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.app-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid #e0f2f1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(13,148,136,0.12);
+}
+
+.app-card.coming-soon {
+  opacity: 0.75;
+}
+
+.app-icon {
+  margin-bottom: 16px;
+}
+
+.app-icon svg {
+  border-radius: 14px;
+}
+
+.app-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.app-badge.dpga {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.app-badge.soon {
+  background: #fef3e2;
+  color: #d97706;
+}
+
+.app-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f2d3d;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #4a6572;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.app-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0d9488;
+  text-decoration: none;
+}
+
+.app-link:hover {
+  text-decoration: underline;
+}
+
+.app-link.muted {
+  color: #94a3b8;
+  cursor: default;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #4a6572;
+  max-width: 700px;
+  margin-bottom: 16px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 0;
+  background: #f0fafa;
+  text-align: center;
+}
+
+.contact p {
+  color: #4a6572;
+  margin-bottom: 16px;
+}
+
+.contact-email {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d9488;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f2d3d;
+  color: #94a3b8;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #2dd4bf;
+  text-decoration: none;
+}
+
+.footer .disclaimer {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  color: #4a6572;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+}
