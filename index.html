@@ -6,6 +6,11 @@
   <meta name="description" content="PublicHealth Tech Lab — Evidence-based digital health tools for global public health." />
   <title>PublicHealth Tech Lab</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0d9488" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="PHT Lab" />
 </head>
 <body>
 
@@ -13,27 +18,33 @@
   <nav class="navbar">
     <div class="container nav-inner">
       <span class="nav-logo">PHT Lab</span>
-      <ul class="nav-links">
-        <li><a href="#apps">Apps</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#apps" data-i18n="nav_apps">Apps</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('en')">🇺🇸 EN</button>
+          <button class="lang-btn" onclick="setLang('ko')">🇰🇷 한국어</button>
+        </div>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
     <div class="container">
-      <h1>PublicHealth Tech Lab</h1>
-      <p class="tagline">Evidence-based digital health tools for people who need them most.</p>
-      <a href="#apps" class="hero-btn">Explore Our Apps</a>
+      <h1 data-i18n="hero_title">PublicHealth Tech Lab</h1>
+      <p class="tagline" data-i18n="hero_tagline">Evidence-based digital health tools for people who need them most.</p>
+      <a href="#apps" class="hero-btn" data-i18n="hero_btn">Explore Our Apps</a>
     </div>
   </header>
 
   <!-- APPS -->
   <section class="apps" id="apps">
     <div class="container">
-      <h2>Our Apps</h2>
+      <h2 data-i18n="apps_title">Our Apps</h2>
       <div class="app-grid">
 
         <div class="app-card">
@@ -61,10 +72,10 @@
               </g>
             </svg>
           </div>
-          <div class="app-badge dpga">DPGA Review</div>
+          <div class="app-badge dpga" data-i18n="badge_dpga">DPGA Review</div>
           <h3>Symply</h3>
-          <p>AI-powered symptom tracker for chronic illness patients — PCOS, endometriosis, fibromyalgia, and autoimmune conditions.</p>
-          <span class="app-link muted">Coming Soon →</span>
+          <p data-i18n="symply_desc">AI-powered symptom tracker for chronic illness patients — PCOS, endometriosis, fibromyalgia, and autoimmune conditions.</p>
+          <span class="app-link muted" data-i18n="coming_soon">Coming Soon →</span>
         </div>
 
         <div class="app-card">
@@ -75,10 +86,10 @@
               <rect x="216" y="108" width="80" height="296" rx="16" fill="#ffffff"/>
             </svg>
           </div>
-          <div class="app-badge dpga">DPGA Review</div>
+          <div class="app-badge dpga" data-i18n="badge_dpga">DPGA Review</div>
           <h3>EpiAid</h3>
-          <p>Field epidemiology decision support tool for outbreak investigation and response.</p>
-          <a href="#" class="app-link muted">Coming Soon →</a>
+          <p data-i18n="epiaid_desc">Field epidemiology decision support tool for outbreak investigation and response.</p>
+          <span class="app-link muted" data-i18n="coming_soon">Coming Soon →</span>
         </div>
 
         <div class="app-card">
@@ -89,10 +100,10 @@
               <rect x="4" y="14" width="24" height="4" rx="2" fill="white"/>
             </svg>
           </div>
-          <div class="app-badge dpga">DPGA Review</div>
+          <div class="app-badge dpga" data-i18n="badge_dpga">DPGA Review</div>
           <h3>EpiCalc</h3>
-          <p>Epidemiological calculator for public health professionals — attack rates, odds ratios, and more.</p>
-          <a href="#" class="app-link muted">Coming Soon →</a>
+          <p data-i18n="epicalc_desc">Epidemiological calculator for public health professionals — attack rates, odds ratios, and more.</p>
+          <span class="app-link muted" data-i18n="coming_soon">Coming Soon →</span>
         </div>
 
         <div class="app-card">
@@ -108,10 +119,10 @@
               <line x1="54" y1="46" x2="58" y2="46" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <div class="app-badge dpga">DPGA Review</div>
+          <div class="app-badge dpga" data-i18n="badge_dpga">DPGA Review</div>
           <h3>VaxGuard</h3>
-          <p>Vaccine-preventable disease risk assessment and immunization guidance tool.</p>
-          <a href="#" class="app-link muted">Coming Soon →</a>
+          <p data-i18n="vaxguard_desc">Vaccine-preventable disease risk assessment and immunization guidance tool.</p>
+          <span class="app-link muted" data-i18n="coming_soon">Coming Soon →</span>
         </div>
 
         <div class="app-card">
@@ -121,10 +132,10 @@
               <text x="50" y="68" font-size="52" text-anchor="middle">🕊️</text>
             </svg>
           </div>
-          <div class="app-badge dpga">DPGA Review</div>
+          <div class="app-badge dpga" data-i18n="badge_dpga">DPGA Review</div>
           <h3>CalmBridge</h3>
-          <p>Mental health support tool bridging evidence-based therapy and accessible digital care.</p>
-          <a href="#" class="app-link muted">Coming Soon →</a>
+          <p data-i18n="calmbridge_desc">Mental health support tool bridging evidence-based therapy and accessible digital care.</p>
+          <span class="app-link muted" data-i18n="coming_soon">Coming Soon →</span>
         </div>
 
         <div class="app-card coming-soon">
@@ -134,10 +145,10 @@
               <text x="50" y="68" font-size="56" text-anchor="middle">🌿</text>
             </svg>
           </div>
-          <div class="app-badge soon">Coming Soon</div>
+          <div class="app-badge soon" data-i18n="badge_soon">Coming Soon</div>
           <h3>GraceBridge</h3>
-          <p>Spiritual and emotional wellbeing support for individuals navigating life transitions and chronic stress.</p>
-          <span class="app-link muted">In Development</span>
+          <p data-i18n="gracebridge_desc">Spiritual and emotional wellbeing support for individuals navigating life transitions and chronic stress.</p>
+          <span class="app-link muted" data-i18n="in_dev">In Development</span>
         </div>
 
       </div>
@@ -147,17 +158,17 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <h2>About</h2>
-      <p>PublicHealth Tech Lab was founded by <strong>Won Ho Lee</strong>, PhD (Chemical Engineering), MPH (Public Health), MDiv — a public health professional dedicated to building evidence-based digital tools for underserved populations.</p>
-      <p>All apps are developed under WHO and Cochrane evidence standards. No ads. No data sales.</p>
+      <h2 data-i18n="about_title">About</h2>
+      <p data-i18n="about_desc1">PublicHealth Tech Lab was founded by <strong>Won Ho Lee</strong>, PhD (Chemical Engineering), MPH (Public Health), MDiv — a public health professional dedicated to building evidence-based digital tools for underserved populations.</p>
+      <p data-i18n="about_desc2">All apps are developed under WHO and Cochrane evidence standards. No ads. No data sales.</p>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>For inquiries, partnerships, or support:</p>
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p data-i18n="contact_desc">For inquiries, partnerships, or support:</p>
       <a href="mailto:contact@phtlab.org" class="contact-email">contact@phtlab.org</a>
     </div>
   </section>
@@ -166,9 +177,82 @@
   <footer class="footer">
     <div class="container">
       <p>© 2026 PublicHealth Tech Lab · <a href="mailto:contact@phtlab.org">contact@phtlab.org</a></p>
-      <p class="disclaimer">Our apps are not medical diagnostic services. Always consult a qualified healthcare professional.</p>
+      <p class="disclaimer" data-i18n="disclaimer">Our apps are not medical diagnostic services. Always consult a qualified healthcare professional.</p>
     </div>
   </footer>
+
+  <script>
+    const translations = {
+      en: {
+        nav_apps: "Apps",
+        nav_about: "About",
+        nav_contact: "Contact",
+        hero_title: "PublicHealth Tech Lab",
+        hero_tagline: "Evidence-based digital health tools for people who need them most.",
+        hero_btn: "Explore Our Apps",
+        apps_title: "Our Apps",
+        badge_dpga: "DPGA Review",
+        badge_soon: "Coming Soon",
+        coming_soon: "Coming Soon →",
+        in_dev: "In Development",
+        symply_desc: "AI-powered symptom tracker for chronic illness patients — PCOS, endometriosis, fibromyalgia, and autoimmune conditions.",
+        epiaid_desc: "Field epidemiology decision support tool for outbreak investigation and response.",
+        epicalc_desc: "Epidemiological calculator for public health professionals — attack rates, odds ratios, and more.",
+        vaxguard_desc: "Vaccine-preventable disease risk assessment and immunization guidance tool.",
+        calmbridge_desc: "Mental health support tool bridging evidence-based therapy and accessible digital care.",
+        gracebridge_desc: "Spiritual and emotional wellbeing support for individuals navigating life transitions and chronic stress.",
+        about_title: "About",
+        about_desc1: "PublicHealth Tech Lab was founded by <strong>Won Ho Lee</strong>, PhD (Chemical Engineering), MPH (Public Health), MDiv — a public health professional dedicated to building evidence-based digital tools for underserved populations.",
+        about_desc2: "All apps are developed under WHO and Cochrane evidence standards. No ads. No data sales.",
+        contact_title: "Contact",
+        contact_desc: "For inquiries, partnerships, or support:",
+        disclaimer: "Our apps are not medical diagnostic services. Always consult a qualified healthcare professional."
+      },
+      ko: {
+        nav_apps: "앱",
+        nav_about: "소개",
+        nav_contact: "연락",
+        hero_title: "PublicHealth Tech Lab",
+        hero_tagline: "가장 필요한 사람들을 위한 근거 기반 디지털 헬스 도구.",
+        hero_btn: "앱 살펴보기",
+        apps_title: "개발 앱",
+        badge_dpga: "DPGA 심사 중",
+        badge_soon: "출시 예정",
+        coming_soon: "출시 예정 →",
+        in_dev: "개발 중",
+        symply_desc: "PCOS, 자궁내막증, 섬유근통, 자가면역질환 환자를 위한 AI 기반 증상 추적 앱.",
+        epiaid_desc: "현장 역학조사 및 발병 대응을 위한 의사결정 지원 도구.",
+        epicalc_desc: "공중보건 전문가를 위한 역학 계산기 — 공격률, 오즈비 등 제공.",
+        vaxguard_desc: "백신 예방 가능 질환 위험도 평가 및 예방접종 안내 도구.",
+        calmbridge_desc: "근거 기반 치료와 접근 가능한 디지털 케어를 연결하는 정신건강 지원 도구.",
+        gracebridge_desc: "삶의 전환기와 만성 스트레스를 겪는 분들을 위한 영적·정서적 웰빙 지원 도구.",
+        about_title: "소개",
+        about_desc1: "PublicHealth Tech Lab은 <strong>이원호</strong> (화학공학 박사, 공중보건학 석사, 목회학 석사)가 설립한 공중보건 기술 연구소입니다. 의료 접근성이 낮은 인구를 위한 근거 기반 디지털 도구 개발에 전념합니다.",
+        about_desc2: "모든 앱은 WHO 및 Cochrane 근거 기준에 따라 개발됩니다. 광고 없음. 데이터 판매 없음.",
+        contact_title: "연락",
+        contact_desc: "문의, 파트너십 또는 지원:",
+        disclaimer: "본 앱들은 의료 진단 서비스가 아닙니다. 모든 의료적 결정은 전문 의료인과 상담하시기 바랍니다."
+      }
+    };
+
+    function setLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+      document.documentElement.lang = lang;
+      localStorage.setItem('phtlab_lang', lang);
+    }
+
+    // 저장된 언어 또는 브라우저 언어 자동 감지
+    const savedLang = localStorage.getItem('phtlab_lang');
+    const browserLang = navigator.language.startsWith('ko') ? 'ko' : 'en';
+    setLang(savedLang || browserLang);
+  </script>
 
 </body>
 </html>

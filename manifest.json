@@ -1,0 +1,17 @@
+﻿{
+  "name": "PublicHealth Tech Lab",
+  "short_name": "PHT Lab",
+  "description": "Evidence-based digital health tools for people who need them most.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f2d3d",
+  "theme_color": "#0d9488",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

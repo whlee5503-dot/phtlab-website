@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="115" fill="#0d4a5c"/>
+  <text x="256" y="200" text-anchor="middle" style="font-size:120px;font-weight:700;fill:#2dd4bf;font-family:system-ui,sans-serif;letter-spacing:2px">PHT</text>
+  <text x="256" y="320" text-anchor="middle" style="font-size:80px;font-weight:700;fill:#ffffff;font-family:system-ui,sans-serif;letter-spacing:2px">LAB</text>
+  <line x1="100" y1="345" x2="412" y2="345" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round"/>
+  <text x="256" y="420" text-anchor="middle" style="font-size:48px;font-weight:400;fill:#94e4da;font-family:system-ui,sans-serif;letter-spacing:4px">PUBLIC HEALTH</text>
+</svg>
