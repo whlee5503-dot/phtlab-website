@@ -1,5 +1,5 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" rx="115" fill="#0d4a5c"/>
-  <text x="256" y="290" text-anchor="middle" style="font-size:160px;font-weight:700;fill:#2dd4bf;font-family:system-ui,sans-serif;letter-spacing:2px">PHT</text>
-  <text x="256" y="420" text-anchor="middle" style="font-size:130px;font-weight:700;fill:#ffffff;font-family:system-ui,sans-serif;letter-spacing:2px">LAB</text>
+  <text x="256" y="260" text-anchor="middle" style="font-size:160px;font-weight:700;fill:#2dd4bf;font-family:system-ui,sans-serif;letter-spacing:2px">PHT</text>
+  <text x="256" y="390" text-anchor="middle" style="font-size:130px;font-weight:700;fill:#ffffff;font-family:system-ui,sans-serif;letter-spacing:2px">LAB</text>
 </svg>
