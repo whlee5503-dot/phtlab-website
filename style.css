@@ -203,8 +203,9 @@ body {
 }
 
 .app-badge.live {
-  background: #dcfce7;
-  color: #16a34a;
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .app-card h3 {
@@ -329,4 +330,5 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
