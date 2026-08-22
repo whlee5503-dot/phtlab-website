@@ -208,6 +208,12 @@ body {
   font-weight: 700;
 }
 
+.app-badge.level1 {
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
 .app-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -330,5 +336,6 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
 
