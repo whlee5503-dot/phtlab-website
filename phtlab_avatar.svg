@@ -1,0 +1,39 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="250" cy="250" r="250"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="250" fill="#1A3A5C"/>
+
+  <!-- Subtle ring -->
+  <circle cx="250" cy="250" r="235" fill="none" stroke="#2E6DA4" stroke-width="6" opacity="0.4"/>
+
+  <!-- Globe outer circle -->
+  <circle cx="250" cy="250" r="150" fill="none" stroke="white" stroke-width="4" opacity="0.85"/>
+
+  <!-- Latitude lines -->
+  <path d="M100,250 Q250,195 400,250" fill="none" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <path d="M100,250 Q250,305 400,250" fill="none" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <path d="M120,190 Q250,155 380,190" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <path d="M120,310 Q250,345 380,310" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Meridians -->
+  <path d="M250,100 Q295,175 295,250 Q295,325 250,400" fill="none" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <path d="M250,100 Q205,175 205,250 Q205,325 250,400" fill="none" stroke="white" stroke-width="2.5" opacity="0.5"/>
+  <line x1="250" y1="100" x2="250" y2="400" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <line x1="100" y1="250" x2="400" y2="250" stroke="white" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Heart -->
+  <path d="M215,225 Q215,198 232,201 Q250,206 250,206 Q250,206 268,201 Q285,198 285,225 Q285,248 250,272 Q215,248 215,225Z" fill="#E74C3C"/>
+  <!-- Heart highlight -->
+  <path d="M223,212 Q223,206 229,208 Q234,210 236,214" fill="none" stroke="white" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Gold dots at poles -->
+  <circle cx="250" cy="100" r="6" fill="#E8B84B"/>
+  <circle cx="250" cy="400" r="6" fill="#E8B84B"/>
+  <circle cx="100" cy="250" r="6" fill="#E8B84B"/>
+  <circle cx="400" cy="250" r="6" fill="#E8B84B"/>
+</svg>
