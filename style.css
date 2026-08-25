@@ -304,6 +304,48 @@ body {
   text-decoration: underline;
 }
 
+/* SDG */
+.sdg {
+  padding: 32px 0;
+  background: #ffffff;
+  border-top: 1px solid #e0f2f1;
+  border-bottom: 1px solid #e0f2f1;
+}
+
+.sdg-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sdg-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f0fdf4;
+  border: 2px solid #22c55e;
+  border-radius: 12px;
+  padding: 16px 32px;
+}
+
+.sdg-icon {
+  font-size: 2.5rem;
+}
+
+.sdg-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #16a34a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.sdg-desc {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #15803d;
+}
+
 /* ABOUT */
 .about {
   padding: 80px 0;
@@ -396,6 +438,7 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
 
 
