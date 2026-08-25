@@ -134,6 +134,44 @@ body {
   transform: translateY(-2px);
 }
 
+/* IMPACT */
+.impact {
+  padding: 48px 0;
+  background: #0f2d3d;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.impact-item {
+  padding: 16px;
+}
+
+.impact-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2dd4bf;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: 0.9rem;
+  color: #94e4da;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
 /* APPS */
 .apps {
   padding: 80px 0;
@@ -336,6 +374,7 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
 
 
